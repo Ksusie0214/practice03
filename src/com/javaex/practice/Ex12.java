@@ -7,13 +7,14 @@ public class Ex12 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("숫자를 입력하세요");
 		int num = sc.nextInt();
-		for(int i = 1; i<=num; i++) {
-			
-			num=num*i;
-			
-			System.out.println("결과값: "+num);
-			
+		int multi = 1;
+		
+		for(int i=1; i<=num;i++) {
+			multi=multi*i;
 		}
+		System.out.println("결과값: "+multi);
+			
+		
 		sc.close();
 	}
 

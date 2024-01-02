@@ -7,7 +7,7 @@ public class Ex09 {
 		
 			for(int sum = 0; sum<=9; sum++) {
 				int result = i+sum;
-				System.out.print(result+"		");
+				System.out.print(result+"	");
 			}
 			System.out.println();
 		}

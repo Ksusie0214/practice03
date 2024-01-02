@@ -7,11 +7,20 @@ public class Ex11 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("숫자를 입력하세요");
 		int num = sc.nextInt();
+		int startnum;
+		int sum=0;
 		
-		for(int i = 1; i<= num; i++) {
-			i=i+2;
+		if(num%2==1) {
+			startnum=1;
 		}
-		System.out.println("결과값: "+num);
+		else {
+			startnum=2;
+		}
+		for(int i=startnum; i<=num; i=i+2) {
+			sum=sum+i;
+		}
+		
+		System.out.println("결과값: "+sum);
 		sc.close();
 	}
 
