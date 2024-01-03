@@ -9,8 +9,17 @@ public class Ex16 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("숫자를 입력하세요: ");
 		int num = sc.nextInt();
-		
-		
+		int sum = 0;
+		int count = 0;
+		for(int i=1; i<=num; i=i+1) {
+			if(i%5==0) {
+				count++;
+				sum=sum+i;
+			}
+		}
+		System.out.println("5의 배수의 개수 : "+count);
+		System.out.println("5의배수의 합 : "+sum);
+		sc.close();
 	}
 
 }

@@ -9,7 +9,8 @@ public class Ex20 {
 		System.out.println("   [숫자맞추기게임 시작]    ");
 		System.out.println("===========================");
 		Scanner sc = new Scanner(System.in);
-		while(true) {
+		boolean run = true;
+		while(run) {
 			System.out.println(">> ");
 			int num=sc.nextInt();
 			if(num>50) {System.out.println("더 낮게");}
@@ -24,7 +25,9 @@ public class Ex20 {
 						case "y" : {
 							System.out.println("=====================");
 							System.out.println("   [숫자맞추기게임 종료]   ");
-							System.out.println("======================"); break;}
+							System.out.println("======================"); 
+							run=false;
+							break;}
 						default : {continue;}
 					}
 			

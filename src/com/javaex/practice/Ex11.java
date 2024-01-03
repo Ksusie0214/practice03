@@ -8,7 +8,7 @@ public class Ex11 {
 		System.out.println("숫자를 입력하세요");
 		int num = sc.nextInt();
 		int startnum;
-		int sum=0;
+		int sum = 0;
 		
 		if(num%2==1) {
 			startnum=1;

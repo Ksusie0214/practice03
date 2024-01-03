@@ -7,8 +7,8 @@ public class Ex17 {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("숫자를 입력하세요: ");
 		int num = sc.nextInt();
-		for(int i1 = num; i1>0; i1--) {
-			for(int sum = 0; sum<i1; sum++) {
+		for(int i = num; i>0; i--) {
+			for(int sum = 0; sum<i; sum++) {
 				System.out.print("*");
 			}
 			System.out.println();
